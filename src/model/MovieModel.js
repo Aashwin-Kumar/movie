@@ -32,7 +32,6 @@ export default function MovieModal({ children, media, id, date }) {
     const { data } = await axios.get(
       `https://api.themoviedb.org/3/${media}/${id}?api_key=${process.env.REACT_APP_MOVIE_DB_KEY}&language=en-US`
     );
-    console.log(data);
     setContent(data);
   };
   const getYoutubeData = async () => {

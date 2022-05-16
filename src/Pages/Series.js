@@ -24,7 +24,7 @@ export const Series = () => {
   useEffect(() => {
     allMovies();
     // eslint-disable-next-line
-  }, [generURL]);
+  }, [pages, generURL]);
 
   return (
     <div className="pb-20">

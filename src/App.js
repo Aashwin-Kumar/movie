@@ -24,7 +24,7 @@ function App() {
             <Route path="/search" element={<Search />} exact />
           </Routes>
         </Container>
-        <ScrollToTop smooth top={400}></ScrollToTop>
+        <ScrollToTop smooth top={400} width='19' ></ScrollToTop>
         <SimpleBottomNavigation />
       </BrowserRouter>
     </>

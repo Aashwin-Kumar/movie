@@ -17,7 +17,6 @@ export const Movies = () => {
     const { data } = await axios.get(
       `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_MOVIE_DB_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${pages}&with_genres=${generURL}`
     );
-console.log(data.results)
     setmoviesDB(data.results);
     setPageCount(data.total_pages);
   };
